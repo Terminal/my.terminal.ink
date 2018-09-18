@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'ink.terminal'
+version '1.0'
+
+sourceCompatibility = 10
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "com.sparkjava:spark-core:2.7.2"
+    compile "com.sparkjava:spark-template-handlebars:2.7.2"
+    compile "org.mongodb.morphia:morphia:1.3.1"
+    compile "ch.qos.logback:logback-classic:+"
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
